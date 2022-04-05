@@ -12,7 +12,7 @@
 }
 
 .App {
-    max-width: 1200px;
+    width: 1200px;
     padding-top: 20px;
 }
 
@@ -56,25 +56,39 @@
 }
 
 .page {
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    margin-right: 5px;
     border: 1px solid teal;
     cursor: pointer;
+    height: 30px;
 }
 
 .page__current {
-    border: 2px solid orange;
+    border: 2px solid #ffa500;
     font-weight: bold;
 }
 
 .navbar {
     height: 50px;
-    width: 100%;
-    display: flex;
-    align-items: center;
     padding: 0 15px;
-    justify-content: flex-end;
     box-sizing: border-box;
     background: #9a9a9a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-grow: 1;
 }
 
 .navbar__links {

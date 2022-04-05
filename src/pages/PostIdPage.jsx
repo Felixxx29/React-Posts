@@ -17,8 +17,8 @@ const PostIdPage = () => {
         setComment(response.data)
     });
     useEffect(() => {
-        fetchPostById(id)
-        fetchCommentsById(id)
+        fetchPostById(id);
+        fetchCommentsById(id);
     }, []);
     return (
         <div>
